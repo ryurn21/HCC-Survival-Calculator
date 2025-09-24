@@ -11,8 +11,8 @@ import torch.nn as nn
 import numpy as np
 
 # Load model and preprocessor
-model_path = '/Users/ryanlim/Desktop/University/IMGS/Cohort HCC Score/Model/cox_model.pt'
-mapper_path = '/Users/ryanlim/Desktop/University/IMGS/Cohort HCC Score/Model/x_mapper.pkl'
+model_path = 'cox_model.pt'
+mapper_path = 'x_mapper.pkl'
 
 
 # Define model architecture (must match training)
