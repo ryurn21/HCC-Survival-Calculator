@@ -30,8 +30,7 @@ torch.serialization.add_safe_globals([
 ])
 model.load_net(model_path, weights_only=False)
 
-with open(mapper_path, "rb") as f:
-    x_mapper = cloudpickle.load(f)
+x_mapper = joblib.load(mapper_path)
 
 # Extract feature names for input
 feature_names = []
