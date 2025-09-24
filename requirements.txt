@@ -2,7 +2,7 @@ streamlit
 pandas
 joblib
 torch
-pycox.models
+pycox
 torchtuples
 matplotlib
 numpy
