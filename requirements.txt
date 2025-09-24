@@ -8,4 +8,4 @@ matplotlib
 numpy
 cloudpickle
 sklearn_pandas
-scikit-learn
+scikit-learn==1.2.2
