@@ -1,9 +1,9 @@
 streamlit
 pandas
-joblib
+joblib==1.3.2
 torch
 pycox
 torchtuples
 matplotlib
 numpy
-scikit-learn  
+scikit-learn==1.3.0  
