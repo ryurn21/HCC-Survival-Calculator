@@ -7,3 +7,4 @@ torchtuples
 matplotlib
 numpy
 cloudpickle
+sklearn_pandas
