@@ -9,6 +9,7 @@ import torchtuples as tt
 import matplotlib.pyplot as plt
 import torch.nn as nn
 import numpy as np
+import cloudpickle
 
 # Load model and preprocessor
 model_path = 'cox_model.pt'
@@ -29,7 +30,8 @@ torch.serialization.add_safe_globals([
 ])
 model.load_net(model_path, weights_only=False)
 
-x_mapper = joblib.load(mapper_path)
+with open(mapper_path, "rb") as f:
+    x_mapper = cloudpickle.load(f)
 
 # Extract feature names for input
 feature_names = []
