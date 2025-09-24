@@ -2,7 +2,8 @@ import streamlit as st
 import pandas as pd
 import joblib
 import torch
-from pycox.models import CoxPH
+import pycox.models.coxph as coxph
+CoxPH = coxph.CoxPH
 import torchtuples as tt
 import matplotlib.pyplot as plt
 import torch.nn as nn
