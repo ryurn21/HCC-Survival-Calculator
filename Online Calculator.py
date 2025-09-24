@@ -1,9 +1,10 @@
+import os
+os.environ['PYCOX_DATA_DIR'] = '/tmp/pycox-data'
 import streamlit as st
 import pandas as pd
 import joblib
 import torch
-import pycox.models.coxph as coxph
-CoxPH = coxph.CoxPH
+from pycox.models import CoxPH
 import torchtuples as tt
 import matplotlib.pyplot as plt
 import torch.nn as nn
